@@ -41,7 +41,7 @@ class HighChartsView(JSONView):
             color = tuple(next(color_generator))
             serie = {
                 'color': "rgba(%d, %d, %d, 1)" % color,
-                'data': data
+                'value': data
             }
             if i < num:
                 serie['name'] = providers[i]
